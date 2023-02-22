@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="container">
+      <div className="loader-container">
+        <div className="spinner"></div>
+      </div>
+
+      <div className="main-content">
+        <h1>Hello World!</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          My demo to show how to add animated loading with React.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="buttons">
+          <button className="btn">
+            <a href="#">Read Article</a>
+          </button>
+          <button className="btn get-quote">
+            Generate Quote
+          </button>
+        </div>
+        <div className="quote-section">
+          <blockquote className="quote">
+            If you do not express your own original ideas, if you do not listen to your own being, you will have betrayed yourself.
+          </blockquote>
+          - <span className='author'>Rollo May</span>
+        </div>
+      </div>
     </div>
   );
 }
